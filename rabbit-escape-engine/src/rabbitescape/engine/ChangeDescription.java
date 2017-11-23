@@ -173,6 +173,7 @@ public class ChangeDescription
         RABBIT_BLOCKING_RISE_LEFT,
         RABBIT_OUT_OF_BOUNDS,
         RABBIT_EXPLODING,
+        RABBIT_JOKERING,
         RABBIT_CRASHING,
         RABBIT_WAITING_LEFT,
         RABBIT_WAITING_RIGHT,
@@ -215,6 +216,12 @@ public class ChangeDescription
         WATER_REGION_HALF,
         WATER_REGION_EMPTY,
         WATER_REGION_FALLING,
+       
+        
+        TOKEN_JOKER_FALLING,
+        TOKEN_JOKER_STILL,
+        TOKEN_JOKER_FALL_TO_SLOPE,
+        TOKEN_JOKER_ON_SLOPE,
 
         ENTRANCE,
         EXIT,

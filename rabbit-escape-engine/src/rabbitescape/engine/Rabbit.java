@@ -59,6 +59,7 @@ public class Rabbit extends Thing implements Comparable<Rabbit>
         Walking walking = new Walking();
         RabbotCrash rabbotCrash = new RabbotCrash();
         RabbotWait rabbotWait = new RabbotWait();
+        Joker jokering = new Joker();
 
         behavioursTriggerOrder.add( exploding );
         behavioursTriggerOrder.add( outOfBounds );
@@ -74,8 +75,9 @@ public class Rabbit extends Thing implements Comparable<Rabbit>
         behavioursTriggerOrder.add( bridging );
         behavioursTriggerOrder.add( blocking );
         behavioursTriggerOrder.add( rabbotWait );
+        behavioursTriggerOrder.add( jokering );
         behavioursTriggerOrder.add( walking );
-
+        
         behaviours.add( exploding );
         behaviours.add( outOfBounds );
         behaviours.add( burning );
@@ -90,7 +92,9 @@ public class Rabbit extends Thing implements Comparable<Rabbit>
         behaviours.add( blocking );
         behaviours.add( climbing );
         behaviours.add( rabbotWait );
+        behaviours.add( jokering );
         behaviours.add( walking );
+        
 
         assert behavioursTriggerOrder.size() == behaviours.size();
     }
@@ -147,7 +151,8 @@ public class Rabbit extends Thing implements Comparable<Rabbit>
     public void step( World world )
     {
         for ( Behaviour behaviour : behaviours )
-        {
+        {	
+        	System.out.println(behaviour+"");
             boolean handled = behaviour.behave( world, this, state );
             if ( handled )
             {

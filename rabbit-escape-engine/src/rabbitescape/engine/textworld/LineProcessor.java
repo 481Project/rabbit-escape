@@ -629,6 +629,12 @@ public class LineProcessor
                 things.add( ret );
                 break;
             }
+            case 'u':
+            {
+                ret = new Token( x, y, Token.Type.joker );
+                things.add( ret );
+                break;
+            }
             case 'l':
             {
                 ret = new Token( x, y, Token.Type.brolly );

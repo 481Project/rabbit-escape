@@ -3,6 +3,7 @@ package rabbitescape.engine;
 import static rabbitescape.engine.Block.Shape.*;
 import static rabbitescape.engine.Direction.RIGHT;
 import static rabbitescape.engine.Direction.opposite;
+
 import rabbitescape.engine.util.Position;
 
 public class BehaviourTools
@@ -96,7 +97,7 @@ public class BehaviourTools
         if ( evenIfNotOnGround || onGround() )
         {
             Token token = world.getTokenAt( rabbit.x, rabbit.y );
-            if ( token != null && token.type == type )
+            if ( (token != null && token.type == type)) 
             {
                 world.changes.removeToken( token );
                 return true;

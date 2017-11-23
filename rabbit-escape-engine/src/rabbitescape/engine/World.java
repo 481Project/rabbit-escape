@@ -54,7 +54,7 @@ public class World
             this.ability = ability;
         }
     }
-
+ 
     public static class NoSuchAbilityInThisWorld extends UnableToAddToken
     {
         private static final long serialVersionUID = 1L;

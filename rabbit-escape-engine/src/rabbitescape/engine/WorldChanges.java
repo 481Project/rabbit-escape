@@ -213,8 +213,10 @@ public class WorldChanges
     {
         Block block = world.getBlockAt( x, y );
         if ( block == null )
-        {
+        {	
+        	
             throw new NoBlockFound( x, y );
+        	
         }
         blocksJustRemoved.add( new Position( x, y ) );
         blocksToRemove.add( block );
