@@ -44,7 +44,7 @@ class GameMenu
     public final JButton zoomIn;
     public final JButton zoomOut;
     public final JButton back;
-
+    //public final JButton life;
 
     private final BitmapCache<SwingBitmap> bitmapCache;
     private final Color backgroundColor;
@@ -89,7 +89,7 @@ class GameMenu
         this.zoomIn     = addButton( "menu_zoom_in",     t( "Zoom in" ) );
         this.zoomOut    = addButton( "menu_zoom_out",    t( "Zoom out" ) );
         this.back       = addButton( "menu_back",        t( "Back" ) );
-
+        //this.life = addButton( "menu_life", t("Life) );
         panel.setPreferredSize(
             new Dimension(
                 buttonSizeInPixels.width + 8,
