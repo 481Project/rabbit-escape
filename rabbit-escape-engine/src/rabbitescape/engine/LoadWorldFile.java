@@ -11,7 +11,7 @@ import rabbitescape.engine.util.FileSystem;
 import rabbitescape.engine.util.Util.MissingResource;
 
 public class LoadWorldFile
-{
+{//yeni levela canı 0 degilse girebilir.
     public static class Failed extends RabbitEscapeException
     {
         private static final long serialVersionUID = 1L;
