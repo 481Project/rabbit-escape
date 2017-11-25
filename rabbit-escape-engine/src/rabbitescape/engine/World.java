@@ -114,6 +114,7 @@ public class World
     public final String author_url;
     public final String[] hints;
     public final String[] solutions;
+    //public int life;
     public final Comment[] comments;
     public final int num_rabbits;
     public final int num_to_save;
@@ -123,7 +124,7 @@ public class World
     public int num_saved;
     public int num_killed;
     public int num_waiting;
-
+  
     public boolean paused;
 
     public final WorldChanges changes;
@@ -143,6 +144,7 @@ public class World
         String author_url,
         String[] hints,
         String[] solutions,
+        //int life,
         int num_rabbits,
         int num_to_save,
         int[] rabbit_delay,
@@ -178,7 +180,7 @@ public class World
         this.paused = paused;
         this.comments = comments;
         this.voidStyle = voidStyle;
-
+      //  this.life = life ;
         if ( -1 == size.width )
         {
             // make allowance for tests with no world
@@ -297,7 +299,7 @@ public class World
         return blockTable.getItemAt( x, y );
     }
 
-    public CompletionState completionState()
+    public CompletionState completionState() //burada int life degeri 0 olursa lost olucak
     {
         if ( paused )
         {
@@ -309,6 +311,10 @@ public class World
             {
                 return CompletionState.WON;
             }
+         /*   else if (this.life == 0)
+            {
+               return CompletionState.LOST;
+            } */
             else
             {
                 return CompletionState.LOST;

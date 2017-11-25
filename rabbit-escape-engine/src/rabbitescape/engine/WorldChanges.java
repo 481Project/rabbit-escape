@@ -46,6 +46,7 @@ public class WorldChanges
         {
             rabbit.calcNewState( world );
         }
+      
         world.rabbits.addAll( rabbitsToEnter );
         world.things.addAll( tokensToAdd );
         world.blockTable.addAll( blocksToAdd );
@@ -94,6 +95,7 @@ public class WorldChanges
         for ( Rabbit rabbit : world.rabbits )
         {
             rabbit.state = State.RABBIT_EXPLODING;
+            --world.life;
         }
     }
 
@@ -128,6 +130,8 @@ public class WorldChanges
             if ( rabbit.type == Rabbit.Type.RABBIT )
             {
                 --world.num_killed;
+                
+                
             }
         }
         rabbitsToKill.clear();
@@ -140,6 +144,7 @@ public class WorldChanges
             ++world.num_killed;
         }
         rabbitsToKill.add( rabbit );
+	--world.life;
     }
 
     private void revertSaveRabbits()
@@ -151,6 +156,7 @@ public class WorldChanges
     public synchronized void saveRabbit( Rabbit rabbit )
     {
         ++world.num_saved;
+      //  --world.life;
         rabbitsToSave.add( rabbit );
     }
 
