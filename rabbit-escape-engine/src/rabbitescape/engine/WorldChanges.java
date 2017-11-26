@@ -46,11 +46,11 @@ public class WorldChanges
         {
             rabbit.calcNewState( world );
         }
-<<<<<<< HEAD
+//<<<<<<< HEAD
        // world.life=3;
-=======
+/*=======
       
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
         world.rabbits.addAll( rabbitsToEnter );
         world.things.addAll( tokensToAdd );
         world.blockTable.addAll( blocksToAdd );
@@ -99,7 +99,7 @@ public class WorldChanges
         for ( Rabbit rabbit : world.rabbits )
         {
             rabbit.state = State.RABBIT_EXPLODING;
-            --world.life;
+            //--world.life;
         }
     }
 
@@ -135,10 +135,10 @@ public class WorldChanges
             {
                 --world.num_killed;
                 
-<<<<<<< HEAD
+/*<<<<<<< HEAD
 =======
                 
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
             }
         }
         rabbitsToKill.clear();
@@ -151,11 +151,11 @@ public class WorldChanges
             ++world.num_killed;
         }
         rabbitsToKill.add( rabbit );
-<<<<<<< HEAD
+/*<<<<<<< HEAD
 	//world.life--;
 =======
 	--world.life;
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
     }
 
     private void revertSaveRabbits()

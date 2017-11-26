@@ -42,7 +42,7 @@ public class ChangeDescription
         
         RABBIT_BURNING,
         RABBIT_BURNING_ON_SLOPE,
-        RABBIT_BOMBING,
+      //  RABBIT_BOMBING,
         RABBIT_BOMBING_ON_SLOPE,
         RABBIT_WALKING_LEFT,
         RABBIT_TURNING_LEFT_TO_RIGHT,

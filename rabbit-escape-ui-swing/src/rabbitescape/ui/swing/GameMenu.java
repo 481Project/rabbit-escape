@@ -46,12 +46,12 @@ class GameMenu
     public final JButton zoomOut;
     public final JButton back;
     public final JButton life;
-<<<<<<< HEAD
+//<<<<<<< HEAD
     //public final JButton bomb;
 
-=======
-    public final JButton bomb;
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+//=======
+ //   public final JButton bomb;
+//>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
     private final BitmapCache<SwingBitmap> bitmapCache;
     private final Color backgroundColor;
   //private final JPanel mainPanel = new JPanel(new BorderLayout());
@@ -96,12 +96,12 @@ class GameMenu
         this.zoomOut    = addButton( "menu_zoom_out",    t( "Zoom out" ) );
         this.back       = addButton( "menu_back",        t( "Back" ) );
         this.life = addButton( "menu_life",     t("Life") );
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //this.bomb = addButton( "menu_bomb",     t("Bomb") );
-=======
-        this.bomb=addButton(  "menu_bomb",      t("Bomb"));
+//=======
+     //   this.bomb=addButton(  "menu_bomb",      t("Bomb"));
 
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+//>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
         panel.setPreferredSize(
             new Dimension(
                 buttonSizeInPixels.width + 8,

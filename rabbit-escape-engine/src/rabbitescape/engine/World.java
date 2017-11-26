@@ -144,11 +144,11 @@ public class World
         String author_url,
         String[] hints,
         String[] solutions,
-<<<<<<< HEAD
+/*<<<<<<< HEAD
         //int num_life,
 =======
         //int life,
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
         int num_rabbits,
         int num_to_save,
         int[] rabbit_delay,
@@ -184,11 +184,11 @@ public class World
         this.paused = paused;
         this.comments = comments;
         this.voidStyle = voidStyle;
-<<<<<<< HEAD
+/*<<<<<<< HEAD
          //this.num_life =num_life ;
 =======
       //  this.life = life ;
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
         if ( -1 == size.width )
         {
             // make allowance for tests with no world
@@ -319,17 +319,17 @@ public class World
             {
                 return CompletionState.WON;
             }
-<<<<<<< HEAD
-           /*else if (this.num_life == 0)
+/*<<<<<<< HEAD
+           else if (this.num_life == 0)
             {
                return CompletionState.LOST;
             }*/ 
-=======
+//=======
          /*   else if (this.life == 0)
             {
                return CompletionState.LOST;
-            } */
->>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330
+            } 
+>>>>>>> e06cb05ff3a5fffcaeb94efb6097de0fd441e330 */
             else
             {
                 return CompletionState.LOST;
