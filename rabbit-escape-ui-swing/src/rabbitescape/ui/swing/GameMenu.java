@@ -22,6 +22,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
+import javax.swing.*;
 
 import rabbitescape.engine.Token;
 import rabbitescape.engine.config.Config;
@@ -44,11 +45,12 @@ class GameMenu
     public final JButton zoomIn;
     public final JButton zoomOut;
     public final JButton back;
-    //public final JButton life;
+    public final JButton life;
+    //public final JButton bomb;
 
     private final BitmapCache<SwingBitmap> bitmapCache;
     private final Color backgroundColor;
-
+  //private final JPanel mainPanel = new JPanel(new BorderLayout());
     private final JPanel panel;
     public final Map<Token.Type, JToggleButton> abilities;
 
@@ -89,7 +91,8 @@ class GameMenu
         this.zoomIn     = addButton( "menu_zoom_in",     t( "Zoom in" ) );
         this.zoomOut    = addButton( "menu_zoom_out",    t( "Zoom out" ) );
         this.back       = addButton( "menu_back",        t( "Back" ) );
-        //this.life = addButton( "menu_life", t("Life) );
+        this.life = addButton( "menu_life",     t("Life") );
+        //this.bomb = addButton( "menu_bomb",     t("Bomb") );
         panel.setPreferredSize(
             new Dimension(
                 buttonSizeInPixels.width + 8,
@@ -190,7 +193,22 @@ class GameMenu
 
         return button;
     }
+ /*  private JButton addButton1( String image, String description )
+    {
+        JButton button1 = new JButton( getIcon( image ) );
+        JButton button2 = new JButton( getIcon( image ) );
+        JButton button3 = new JButton( getIcon( image ) );
+        button.setBackground( backgroundColor );
+        button.setBorderPainted( false );
+        button.setToolTipText( description );
 
+       // panel.add( button1 );
+        mainPanel.add(button1,BorderLayout.EAST);
+        mainPanel.add(button2,BorderLayout.EAST);
+        mainPanel.add(button3,BorderLayout.EAST);
+        return button1;
+    }
+*/
     private ImageIcon getIcon( String name )
     {
         return new ImageIcon(

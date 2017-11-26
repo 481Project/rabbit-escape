@@ -30,6 +30,7 @@ public class Token extends Thing
         block,
         climb,
         explode,
+        bomb,
         brolly
     }
 
@@ -77,7 +78,11 @@ public class Token extends Thing
             case explode: return chooseState( moving, slopeBelow, onSlope,
                 TOKEN_EXPLODE_FALLING, TOKEN_EXPLODE_STILL,
                 TOKEN_EXPLODE_FALL_TO_SLOPE, TOKEN_EXPLODE_ON_SLOPE);
-
+            
+            case bomb: return chooseState( moving, slopeBelow, onSlope,
+                TOKEN_BOMB_FALLING, TOKEN_BOMB_STILL,
+                TOKEN_BOMB_FALL_TO_SLOPE, TOKEN_BOMB_ON_SLOPE); 
+       
             case brolly: return chooseState( moving, slopeBelow, onSlope,
                 TOKEN_BROLLY_FALLING, TOKEN_BROLLY_STILL,
                 TOKEN_BROLLY_FALL_TO_SLOPE, TOKEN_BROLLY_ON_SLOPE);
@@ -136,6 +141,9 @@ public class Token extends Thing
         case TOKEN_CLIMB_FALL_TO_SLOPE:
         case TOKEN_EXPLODE_FALL_TO_SLOPE:
         case TOKEN_EXPLODE_FALLING:
+        case TOKEN_BOMB_FALLING:
+        case TOKEN_BOMB_FALL_TO_SLOPE:
+
         case TOKEN_BROLLY_FALLING:
         case TOKEN_BROLLY_FALL_TO_SLOPE:
         {

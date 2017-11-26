@@ -365,6 +365,14 @@ public class GameUi implements StatsChangedListener
 
         MenuTools.clickOnKey( menu.explodeAll, "explode_all", KeyEvent.VK_X );
 
+       //  menu.bomb.addActionListener( new ActionListener()
+        {
+          //  @Override
+
+        }
+
+       // MenuTools.clickOnKey( menu.bomb, "bomb_all", KeyEvent.VK_X );
+
         menu.zoomIn.addActionListener( new ActionListener()
         {
             @Override
@@ -551,7 +559,23 @@ public class GameUi implements StatsChangedListener
             }
         }
     }
-
+     /*private void bombClicked()
+    {
+        switch ( gameLaunch.world.completionState() )
+        {
+            case RUNNING:
+            case PAUSED:
+            {
+                gameLaunch.checkBomb();
+                break;
+            }
+            default:
+            {
+               
+                break;
+            }
+        }
+    }*/
     private void zoomClicked( boolean zoomIn )
     {
         if ( zoomIn )

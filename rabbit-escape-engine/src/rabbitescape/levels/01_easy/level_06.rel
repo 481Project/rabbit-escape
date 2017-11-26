@@ -13,6 +13,7 @@
 :bridge=2
 :block=2
 :explode=20
+:bomb=4
 :music=tryad-witness
 #################
 #      ###      #

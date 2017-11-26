@@ -38,7 +38,8 @@ public class ChangeDescription
         FIRE_EXTINGUISHING,
 
         PIPE,
-
+        
+        
         RABBIT_BURNING,
         RABBIT_BURNING_ON_SLOPE,
         RABBIT_WALKING_LEFT,
@@ -173,6 +174,7 @@ public class ChangeDescription
         RABBIT_BLOCKING_RISE_LEFT,
         RABBIT_OUT_OF_BOUNDS,
         RABBIT_EXPLODING,
+	RABBIT_BOMBING,
         RABBIT_CRASHING,
         RABBIT_WAITING_LEFT,
         RABBIT_WAITING_RIGHT,
@@ -210,6 +212,11 @@ public class ChangeDescription
         TOKEN_BROLLY_STILL,
         TOKEN_BROLLY_FALL_TO_SLOPE,
         TOKEN_BROLLY_ON_SLOPE,
+	
+	TOKEN_BOMB_FALLING,
+        TOKEN_BOMB_STILL,
+        TOKEN_BOMB_FALL_TO_SLOPE,
+        TOKEN_BOMB_ON_SLOPE,
 
         WATER_REGION,
         WATER_REGION_HALF,

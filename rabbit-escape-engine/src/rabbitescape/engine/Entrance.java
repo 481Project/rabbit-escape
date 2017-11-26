@@ -64,6 +64,8 @@ public class Entrance extends Thing
         world.changes.enterRabbit( r );
 
         world.rabbitIndex( r );
+
+      //world.life--;
     }
 
     @Override
