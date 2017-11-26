@@ -20,7 +20,7 @@ public class Joker extends Behaviour {
 	
 	@Override
 	public boolean checkTriggered(Rabbit rabbit, World world) {
-		//System.out.println("check triggered");
+	
 		BehaviourTools t = new BehaviourTools( rabbit, world );
 		return t.pickUpToken( joker,true);
 		
@@ -31,7 +31,6 @@ public class Joker extends Behaviour {
 		
 		if ( triggered==true ) 
         {
-			//System.out.println("newState");
             return RABBIT_JOKERING;
         }
         return null;
@@ -49,6 +48,7 @@ public class Joker extends Behaviour {
 		if ( state == RABBIT_JOKERING)
         {	
 			world.changes.killRabbit(rabbit);
+			--world.num_killed;
         	++world.num_saved;
             
             return true;

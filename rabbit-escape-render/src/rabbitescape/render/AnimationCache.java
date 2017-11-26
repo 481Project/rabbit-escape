@@ -17,6 +17,7 @@ public class AnimationCache
         {
             if ( !name.equals( AnimationLoader.NONE ) )
             {
+            	
                 this.animations.put( name, AnimationLoader.load( name ) );
             }
         }

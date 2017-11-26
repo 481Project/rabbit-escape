@@ -1,11 +1,11 @@
-rabbit_joker_01 -32 -32
-rabbit_joker_02 -32 -32
-rabbit_joker_03 -32 -32
-rabbit_joker_04 -32 -32
-rabbit_joker_05 -32 -32
-rabbit_joker_06 -32 -32
-rabbit_joker_07 -32 -32
-rabbit_joker_08 -32 -32
-rabbit_joker_09 -32 -32
-rabbit_joker_10 -32 -32
+rabbit_joker_01 0 32 token_joker
+rabbit_joker_02 0 32
+rabbit_joker_03 0 32
+rabbit_joker_04 0 32
+rabbit_joker_05 0 32
+rabbit_joker_06 0 32
+rabbit_joker_07 0 32
+rabbit_joker_08 0 32
+rabbit_joker_09 0 32
+rabbit_joker_10 0 32
 
