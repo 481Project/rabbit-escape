@@ -9,7 +9,8 @@ public class Block implements LookupItem2D
     public enum Material
     {
         EARTH,
-        METAL
+        METAL,
+        BOMB
     }
 
     public enum Shape
